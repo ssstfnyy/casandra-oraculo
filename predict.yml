@@ -1,0 +1,7 @@
+services:
+  oraculo:
+    image: ssstefany/casandra:version02
+    hostname: oraculo
+    command: ["predict"]
+    ports:
+      - 10800:10800

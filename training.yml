@@ -1,0 +1,8 @@
+services:
+  oraculo:
+    image: ssstefany/casandra:version02
+    hostname: oraculo
+    command: ["train"]
+    volumes:
+      - ./casandra_libs/training_data:/home/casandra/casandra_libs/training_data
+      - ./casandra_libs/training_model:/home/casandra/casandra_libs/training_model
